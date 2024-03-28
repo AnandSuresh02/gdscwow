@@ -13,9 +13,11 @@ const HorizontalImageSlider = ({ images }) => {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const centerIndex = Math.floor(images.length / 5); // Calculate the index of the center image
+
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
-      <div className="flex w-full h-full transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 20}%)` }}>
+      <div className="flex w-full h-full transition-transform duration-500" style={{ transform: `translateX(-${(currentIndex - centerIndex) * (100 / images.length)}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 w-1/5 relative">
             <Image
@@ -23,7 +25,7 @@ const HorizontalImageSlider = ({ images }) => {
               alt={image.alt}
               layout="fill"
               objectFit="cover"
-              className={`transform transition-transform duration-500 ${index === currentIndex ? 'scale-125' : 'scale-100'}`}
+              className={`transform transition-transform duration-500 ${index === centerIndex ? 'scale-125' : 'scale-100'}`}
             />
           </div>
         ))}

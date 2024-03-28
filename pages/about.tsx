@@ -11,6 +11,11 @@ const AboutPage = () => {
     { src: '/wow_circle.png', alt: 'Image 2' },
     { src: '/wow_circle.png', alt: 'Image 3' },
     { src: '/wow_circle.png', alt: 'Image 4' },
+    { src: '/wow_circle.png', alt: 'Image 4' },
+    { src: '/wow_circle.png', alt: 'Image 4' },
+    { src: '/wow_circle.png', alt: 'Image 4' },
+    { src: '/wow_circle.png', alt: 'Image 4' },
+
   ];
 
   return (
