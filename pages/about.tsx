@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import VerticalImageSlider from "@/components/ImageSlider";
+import HorizontalImageSlider from "@/components/ImageSlider";
 const inter = Inter({ subsets: ["latin"] });
 
 const AboutPage = () => {
@@ -22,7 +22,7 @@ const AboutPage = () => {
           GDSC WoW Kerala is a community of students and developers who are passionate about Google technologies. We are a part of Google Developers Student Clubs, a program for students to learn about Google technologies and build solutions for their local communities.
         </p>
       </div>
-      <VerticalImageSlider images={images} />
+      <HorizontalImageSlider images={images} />
       <Footer />
     </div>
   );
