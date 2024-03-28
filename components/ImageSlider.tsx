@@ -1,6 +1,6 @@
 // components/HorizontalImageSlider.js
 import { useState, useEffect } from 'react';
-import Image from 'next/image'; // Importing Image component from Next.js
+import Image from 'next/image';
 
 const HorizontalImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,14 +15,15 @@ const HorizontalImageSlider = ({ images }) => {
 
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
-      <div className="flex h-full transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex w-full h-full transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 20}%)` }}>
         {images.map((image, index) => (
-          <div key={index} className="flex-shrink-0 w-full">
+          <div key={index} className="flex-shrink-0 w-1/5 relative">
             <Image
               src={image.src}
               alt={image.alt}
-              layout="fill" // Fill the container
-              objectFit="cover" // Maintain aspect ratio and cover container
+              layout="fill"
+              objectFit="cover"
+              className={`transform transition-transform duration-500 ${index === currentIndex ? 'scale-125' : 'scale-100'}`}
             />
           </div>
         ))}
