@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const AboutPage = () => {
   const images = [
-    { src: '/image1.jpg', alt: 'Image 1' },
+    { src: 'https://dummyimage.com/600x400/000/fff', alt: 'Image 1' },
     { src: '/image2.jpg', alt: 'Image 2' },
   ];
 

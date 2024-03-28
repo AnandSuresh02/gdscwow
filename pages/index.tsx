@@ -4,23 +4,41 @@ import NavBar from "@/components/Navbar";
 import Timer from "@/components/Timer";
 import Wow_logo from "@/public/wow_logo.png";
 import Footer from "@/components/Footer";
+import Hero from "@/components/LandingPage/Hero";
+import TimeLine from "@/components/LandingPage/TimeLine";
+import { useEffect } from "react";
+import Venue from "@/components/LandingPage/Venue";
+import Sponsors from "@/components/LandingPage/Sponsors";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    let color;
+  
+    if (scrollPosition <= 250) {
+      color = '--google-blue';
+    } else if (scrollPosition > 250 && scrollPosition <= 500) {
+      color = '--google-red';
+    } else if (scrollPosition > 500 && scrollPosition <= 750) {
+      color = '--google-yellow';
+    }else {
+      color = '--google-green';
+    }
+  
+    document.documentElement.style.setProperty('--scrollbar-thumb-color', `var(${color})`);
+  });
+}, []);
   return (
     <div className="flex flex-col overflow-x-hidden">
       <NavBar />
       <div className="flex flex-col">
-        <div className="flex flex-col justify-center items-center p-5">
-          <h1 className="text-white font-medium text-[30px] lg:text-[30px]">
-            Google Developers Student Clubs, Kerala
-          </h1>
-          <p className="text-white font-normal text-[25px]">presents</p>
-          <h1 className="text-white font-bold  text-[100px] lg:text-[150px]">
-            WoW
-          </h1>
-        </div>
-        <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
+        <Hero />
+        <Venue />
+        <Sponsors />
+        <TimeLine/>
+        {/* <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
           <Timer />
           <Image
             alt="helo"
@@ -37,7 +55,7 @@ export default function Home() {
           </h1>
           <p className="text-white font-normal text-[20px]">GDSC WoW Kerala is a community of students and developers who are passionate about Google technologies. We are a part of Google Developers Student Clubs, a program for students to learn about Google technologies and build solutions for their local communities.</p>
         </div>
-        <Footer/>
+        <Footer/> */}
       </div>
     </div>
   );

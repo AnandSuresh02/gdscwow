@@ -25,6 +25,10 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
+    --google-red: #DB4437;
+    --google-blue: #4285F4;
+    --google-yellow: #F4B400;
+    --google-green: #0F9D58;
   }
 
   .dark {
@@ -61,7 +65,45 @@
 }
 
 body {
-  background-color: black;
+  background-color: #151719;
   color: white;
   margin: 0;
+}
+
+
+.gradColor {
+  background: linear-gradient(to right, 
+  var(--google-green) 0%, 
+  var(--google-blue) 25%, 
+  var(--google-red) 50%, 
+  var(--google-yellow) 100%);
+  transition: background 0.5s ease, border 0.5s ease;
+}
+
+.gradColor:hover {
+  background: linear-gradient(to left, 
+  var(--google-green) 0%, 
+  var(--google-blue) 25%, 
+  var(--google-red) 50%, 
+  var(--google-yellow) 100%);
+}
+
+.gradImgR{
+    mask-image: linear-gradient(to right, transparent, #151719);
+}
+.gradImgL{
+    mask-image: linear-gradient(to right, transparent, #151719);
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color); 
+    border-radius: 20px;
 }
