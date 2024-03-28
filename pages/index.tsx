@@ -38,6 +38,7 @@ export default function Home() {
         <Venue />
         <Sponsors />
         <TimeLine/>
+        <Footer/> 
         {/* <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
           <Timer />
           <Image
@@ -55,7 +56,7 @@ export default function Home() {
           </h1>
           <p className="text-white font-normal text-[20px]">GDSC WoW Kerala is a community of students and developers who are passionate about Google technologies. We are a part of Google Developers Student Clubs, a program for students to learn about Google technologies and build solutions for their local communities.</p>
         </div>
-        <Footer/> */}
+        */}
       </div>
     </div>
   );

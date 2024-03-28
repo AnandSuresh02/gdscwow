@@ -25,10 +25,10 @@ const Hero = () => {
         and build solutions for their local communities.
       </p>
       <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center pt-8">
-        <button className="h-20 ease-in-out duration-300 z-20 w-48 gradColor font-medium text-md md:text-xl rounded-2xl md:my-8 my-4 mx-4">
+        <button className="h-20 ease-in-out duration-300 z-20 w-64 gradColor font-medium text-md md:text-xl rounded-sm md:my-8 my-4 mx-4">
           Register Now
         </button>
-        <button className="h-20 ease-in-out duration-300 z-20 w-48 gradColor font-medium text-md md:text-xl rounded-2xl md:my-8 my-4 mx-4">
+        <button className="h-20 ease-in-out duration-300 z-20 w-64 gradColor font-medium text-md md:text-xl rounded-sm md:my-8 my-4 mx-4">
           Know  more
         
         </button>
