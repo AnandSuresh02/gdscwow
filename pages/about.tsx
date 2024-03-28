@@ -25,11 +25,16 @@ const AboutPage = () => {
         <h1 className="text-white font-bold  text-[50px] lg:text-[150px]">
           GDSC WoW Kerala
         </h1>
-        <p className="text-white font-normal text-[20px]">
+        <p className="md:px-56 md:text-xl text-sm lg:text-center text-justify flex justify-center items-center px-4 mb-8">
           GDSC WoW Kerala is a community of students and developers who are passionate about Google technologies. We are a part of Google Developers Student Clubs, a program for students to learn about Google technologies and build solutions for their local communities.
         </p>
       </div>
       <HorizontalImageSlider images={images} />
+      <div className="flex flex-col md:flex-row justify-end items-center md:justify-center">
+        <button className="h-20 ease-in-out duration-300 z-20 w-64 gradColor font-medium text-md md:text-xl rounded-sm md:my-8 my-4 mx-4">
+          Click Here
+        </button>
+      </div>
       <Footer />
     </div>
   );
