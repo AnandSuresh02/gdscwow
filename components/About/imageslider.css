@@ -1,0 +1,36 @@
+/* Add these styles to your global CSS or component-specific CSS */
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-container.left {
+    animation: slideFromLeft 0.5s ease-in-out;
+  }
+  
+  .image-container.right {
+    animation: slideFromRight 0.5s ease-in-out;
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
