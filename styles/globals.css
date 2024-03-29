@@ -104,6 +104,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color); 
-    border-radius: 20px;
+  background: var(--scrollbar-thumb-color, var(--google-blue)); 
+  border-radius: 20px;
+  transition: background 0.5s ease-in-out;
+}
+
+.textGrad {
+  @apply bg-gradient-to-r from-googleGreen via-blue-500 to-googleYellow inline-block text-transparent bg-clip-text;
 }

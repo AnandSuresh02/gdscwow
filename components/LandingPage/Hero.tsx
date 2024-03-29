@@ -3,9 +3,11 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="flex h-screen w-full flex-col justify-center items-center md:p-5 px-10 pt-28 overflow-hidden relative">
-        <img src="/assets/images/LineDraw2.svg" className="gradImgR absolute opacity-45 bg-gradient-to-r from-bgColor to-transparent -right-40 z-10 -rotate-45 -top-24  w-[50vw]" alt="" />
-        <img src="/assets/images/LineDraw2.svg" className=" gradImgL absolute  opacity-45 -left-40 z-10 -rotate-45 scale-x-[-1]  scale-y-[-1]  -bottom-24  w-[50vw]" alt="" />
+    <div className="flex h-screen w-full flex-col justify-center items-center md:p-5 px-10 pt-40 overflow-hidden relative">
+        <img src="/assets/images/LineDraw2.svg" className="gradImgR hidden xl:block absolute opacity-45 bg-gradient-to-r from-bgColor to-transparent -right-40 z-10 -rotate-45 -top-24  w-[50vw]" alt="" />
+        <img src="/assets/images/LineDraw2.svg" className=" gradImgL hidden xl:block absolute  opacity-45 -left-40 z-10 -rotate-45 scale-x-[-1]  scale-y-[-1]  -bottom-24  w-[50vw]" alt="" />
+        <img src="/assets/images/LineDraw1.svg" className="gradImgR lg:hidden absolute opacity-45  -right-40 z-10 -rotate-45 top-24  w-[100vh]" alt="" />
+        {/* <img src="/assets/images/LineDraw1.svg" className=" gradImgL lg:hidden absolute  opacity-45 -left-40 z-10 -rotate-45 scale-x-[-1]  scale-y-[-1]  -bottom-0  w-[100vw]" alt="" /> */}
       <h1 className="text-white font-medium text-2xl text-center lg:text-[30px] flex flex-wrap justify-center items-center">
         <span className="text-googleGreen px-1">Google</span>
         <span className="text-googleBlue px-1">Developers</span>
