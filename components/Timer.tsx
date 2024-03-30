@@ -19,28 +19,28 @@ export default function Timer() {
           },1000)
     },[second])
   return (
-    <div className="flex bg-bgColor flex-row justify-center items-center gap-3 m-5 p-6 min-h-screen text-center">
+    <div className="flex bg-bgColor flex-col md:flex-row justify-center items-center gap-3 m-5 p-16 md:py-32  text-center">
       <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-slate-300 font-bold text-7xl">{day<10 ? '0'+day : day}</h1>
+          <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{day<10 ? '0'+day : day}</h1>
           <p>days</p>
         </CardContent>
       </Card>
       <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-slate-300 font-bold text-7xl">{hour<10 ? '0'+hour : hour}</h1>
+          <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{hour<10 ? '0'+hour : hour}</h1>
           <p>hrs</p>
         </CardContent>
       </Card>
       <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-slate-300 font-bold text-7xl">{minute<10 ? '0'+minute : minute}</h1>
+          <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{minute<10 ? '0'+minute : minute}</h1>
           <p>mins</p>
         </CardContent>
       </Card>
       <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-slate-300 font-bold text-7xl">{second<10 ? '0'+second : second}</h1>
+          <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{second<10 ? '0'+second : second}</h1>
           <p>secs</p>
         </CardContent>
       </Card>

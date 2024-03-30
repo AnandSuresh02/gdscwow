@@ -33,10 +33,10 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       <NavBar />
-      <div className="flex flex-col">
+      <div className="flex flex-col googleFont">
         <Hero />
-        <Venue />
         <Timer />
+        <Venue />
         <Sponsors />
         <TimeLine/>
         <Footer/> 
