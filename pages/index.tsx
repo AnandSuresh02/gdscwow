@@ -36,6 +36,7 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero />
         <Venue />
+        <Timer />
         <Sponsors />
         <TimeLine/>
         <Footer/> 

@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/timerCard";
 import { useState,useEffect } from "react";
 export default function Timer() {
     const counter = new Date("May 5,2024 9:30:00").getTime();
@@ -19,28 +19,28 @@ export default function Timer() {
           },1000)
     },[second])
   return (
-    <div className="flex flex-row justify-evently gap-3 m-5 p-6">
-      <Card className="dark">
+    <div className="flex bg-bgColor flex-row justify-center items-center gap-3 m-5 p-6 min-h-screen text-center">
+      <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-white font-bold text-[25px]">{day<10 ? '0'+day : day}</h1>
+          <h1 className="text-slate-300 font-bold text-7xl">{day<10 ? '0'+day : day}</h1>
           <p>days</p>
         </CardContent>
       </Card>
-      <Card className="dark">
+      <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-white font-bold text-[25px]">{hour<10 ? '0'+hour : hour}</h1>
+          <h1 className="text-slate-300 font-bold text-7xl">{hour<10 ? '0'+hour : hour}</h1>
           <p>hrs</p>
         </CardContent>
       </Card>
-      <Card className="dark">
+      <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-white font-bold text-[25px]">{minute<10 ? '0'+minute : minute}</h1>
+          <h1 className="text-slate-300 font-bold text-7xl">{minute<10 ? '0'+minute : minute}</h1>
           <p>mins</p>
         </CardContent>
       </Card>
-      <Card className="dark">
+      <Card className="bg-bgColor">
         <CardContent>
-          <h1 className="text-white font-bold text-[25px]">{second<10 ? '0'+second : second}</h1>
+          <h1 className="text-slate-300 font-bold text-7xl">{second<10 ? '0'+second : second}</h1>
           <p>secs</p>
         </CardContent>
       </Card>
