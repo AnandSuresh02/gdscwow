@@ -1,13 +1,16 @@
-// components/HorizontalImageSlider.js
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-interface Props {
-  images: string[];
+interface ImageProps {
+  src: string;
+  alt: string;
 }
 
-const HorizontalImageSlider: React.FC<Props> = ({ images }) => {
-  // Your image slider logic here
+interface HorizontalImageSliderProps {
+  images: ImageProps[];
+}
+
+const HorizontalImageSlider: React.FC<HorizontalImageSliderProps> = ({ images }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
