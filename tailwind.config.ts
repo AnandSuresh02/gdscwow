@@ -29,6 +29,7 @@ const config = {
         googleBlue:"#4285F4",
         googleGreen:"#0F9D58",
         googleYellow:"#F4B400",
+        accentcolor:"#77256C",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

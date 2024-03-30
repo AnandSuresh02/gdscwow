@@ -9,6 +9,7 @@ import TimeLine from "@/components/LandingPage/TimeLine";
 import { useEffect } from "react";
 import Venue from "@/components/LandingPage/Venue";
 import Sponsors from "@/components/LandingPage/Sponsors";
+import JoinUs from "@/components/LandingPage/JoinUs";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <Hero />
         <Timer />
         <Venue />
+        <JoinUs/>
         <Sponsors />
         <TimeLine/>
         <Footer/> 
