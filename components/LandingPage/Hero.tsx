@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex h-screen w-full flex-col justify-center items-center md:p-5 px-10 mt-28 md:mt-10 overflow-hidden relative">
         <img src="/assets/images/LineDraw2.svg" className="gradImgR hidden xl:block absolute opacity-45 bg-gradient-to-r from-bgColor to-transparent -right-40 z-10 -rotate-45 -top-36  w-[50vw]" alt="" />
         <img src="/assets/images/LineDraw2.svg" className=" gradImgL hidden xl:block absolute  opacity-45 -left-40 z-10 -rotate-45 scale-x-[-1]  scale-y-[-1]  -bottom-32  w-[50vw]" alt="" />
-        <img src="/assets/images/LineDraw1.svg" className="gradImgR lg:hidden absolute opacity-45  -right-40 z-10 -rotate-45 top-24  w-[100vh]" alt="" />
+        <img src="/assets/images/LineDraw2.svg" className="gradImgR fixed lg:hidden  opacity-45  -right-40 z-10 -rotate-45 top-24  w-[100vh]" alt="" />
         {/* <img src="/assets/images/LineDraw1.svg" className=" gradImgL lg:hidden absolute  opacity-45 -left-40 z-10 -rotate-45 scale-x-[-1]  scale-y-[-1]  -bottom-0  w-[100vw]" alt="" /> */}
       <h1 className="text-white font-medium text-2xl text-center lg:text-[30px] flex flex-col flex-wrap justify-center items-center">
         {/* <span className="text-googleGreen px-1">Google</span>
@@ -16,7 +16,7 @@ const Hero = () => {
         Google Developers Student Clubs 
       </h1>
       <img src="/assets/icons/wow.svg" className="md:w-2/5 z-50" alt="" />
-      <span className="  font-bold googleTextGrad text-3xl ">Kerala</span>
+      <span className="  font-bold googleTextGrad text-3xl ">KERALA</span>
       <p className="md:px-56 md:text-xl py-4 text-sm lg:text-center text-justify flex justify-center items-center px-4 mb-8">
         GDSC WoW Kerala is a community of students and developers who are
         passionate about Google technologies. We are a part of Google Developers
