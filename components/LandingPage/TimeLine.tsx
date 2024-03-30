@@ -4,6 +4,7 @@ const TimeLine = () => {
   return (
     <div className='h-[50vh]  w-full flex justify-center items-center'>
       Timeline
+      
     </div>
   )
 }
