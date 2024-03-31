@@ -4,7 +4,6 @@ import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import { motion } from "framer-motion";
-import HorizontalImageSlider from "@/components/About/ImageSlider";
 import Aboutgdsc from "@/components/About/Aboutgdsc";
 import {
   Accordion,
@@ -26,28 +25,19 @@ const AboutPage = () => {
     "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   const skills = [
-
     {
-
       Icon: SiInstagram,
       link: "www.sdgjvh.com",
     },
     {
-
       Icon: SiLinkedin,
       link: "www.sdgjvh.com",
     },
-
     {
-
       Icon: SiX,
       link: "www.sdgjvh.com",
     },
-
-
-
   ]
-
   return (
     <div className="flex flex-col overflow-x-hidden">
       <NavBar />
@@ -60,7 +50,7 @@ const AboutPage = () => {
               y: -80,
             }}
             animate={{
-              opacity: 1,
+              opacity: 0,
               y: 0,
             }}
             transition={{
@@ -68,9 +58,7 @@ const AboutPage = () => {
             }}
             className="z-50 flex flex-col justify-center items-center"
           >
-            <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-              The hero section slideshow <br /> nobody asked for
-            </motion.p>
+            
 
           </motion.div>
         </ImagesSlider>      <div className="flex flex-col md:flex-row justify-end items-center md:justify-center">
@@ -104,10 +92,8 @@ const AboutPage = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-
         <h2 className="text-center font-medium text-2xl">Contact us</h2>
         <div className="max-w-5xl mx-auto px-auto">
-
           <HoverEffect items={skills} />
         </div>
       </div>

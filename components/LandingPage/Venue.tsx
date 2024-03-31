@@ -13,7 +13,7 @@ const Venue = () => {
           <div className="h-full w-full bg-black/70 flex justify-center items-center">
             <h1 className="md:text-5xl text-3xl text-center md:px-10 font-bold ">
               <div className="block md:text-3xl text-2xl">SEE YOU ALL AT</div>
-              <div 
+              <div
                 style={{
                   backgroundImage: `url('/assets/images/kochi.jpg')`,
                   backgroundRepeat: 'no-repeat',
@@ -22,7 +22,7 @@ const Venue = () => {
                   WebkitBackgroundClip: 'text',
                   MozBackgroundClip: 'text',
                   backgroundClip: 'text',
-                  color: 'transparent', 
+                  color: 'transparent',
                 }}
                 className="md:text-[220px] text-[100px] py-6 md:py-0 my-4 break-all block googleFontB"
               >
