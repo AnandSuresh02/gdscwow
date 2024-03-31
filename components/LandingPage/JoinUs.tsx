@@ -10,7 +10,7 @@ const JoinUs = () => {
         <img src="/assets/images/com.svg" className='absolute bottom-0  right-0' alt="" />
       </div>
       <div className='md:h-[90%] md:pb-0 pb-40 relative rounded-2xl md:w-1/3 mt-10 md:mt-0 mx-4 border-2 p-10'>
-      <h1 className='text-3xl font-bold googleFont'>Break the loop</h1>
+        <h1 className='text-3xl font-bold googleFont'>Break the loop</h1>
         <p className='w-3/4 py-2 text-lg'>Twist, turn, and teleport your way to the finish line with this year's I/O puzzle.</p>
         <button className='px-8 py-4 border-2 rounded-full border-accentcolor  hover:bg-accentcolor ease-in-out duration-300 my-6'>Play</button>
         <img src="/assets/images/comunity.webp" className='absolute w-3/5 rounded-2xl bottom-0 right-0' alt="" />
