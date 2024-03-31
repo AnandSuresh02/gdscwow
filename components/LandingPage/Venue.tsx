@@ -28,8 +28,8 @@ const Venue = () => {
               >
                 KOCHI
               </div>
-              <div className="block  md:text-3xl text-2xl">
-                ON MAY <span className="textGrad">7TH</span>
+              <div className="block  md:text-3xl text-2xl googleFont">
+                ON MAY <span className="textGrad">7th</span>
               </div>
             </h1>
           </div>
