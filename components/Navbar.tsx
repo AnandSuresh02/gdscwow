@@ -14,12 +14,20 @@ export default function NavBar() {
     router.push("/about"); // Redirect to the about page
   };
 
+  // Function to handle navigation to the home page
+  const handleHomeClick = () => {
+    router.push("/"); // Redirect to the home page
+  };
+
   return (
     <div className="flex flex-col dark fixed z-50 w-full">
       <div className="flex flex-row justify-between items-center z-50 h-10 m-5 p-2">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4" onClick={handleHomeClick}>
+          {/* Added onClick to the title to trigger handleHomeClick */}
           <img alt="WoW Logo" src={Wow_Circle.src} className="h-10 w-10" />
-          <h1 className="text-[25px] leading-10 googleFont">GDSC WoW</h1>
+          <h1 className="text-[25px] leading-10 googleFont cursor-pointer">
+            GDSC WoW
+          </h1>
         </div>
         <div className="flex items-center">
           <button
