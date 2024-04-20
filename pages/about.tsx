@@ -40,14 +40,15 @@ const AboutPage = () => {
   ]
 
   const testimonials = [
-    { image:  "./assets/images/kochi.jpg" },
-    { image:  "url_to_image2.jpg" },
-    { image: " url_to_image3.jpg" },
-    { image:  "url_to_image4.jpg" },
-    { image: " url_to_image5.jpg" },
-    ];
-    return (
-      <div className="flex flex-col overflow-x-hidden">
+    { image: "./assets/images/kochi.jpg" },
+    { image: "url_to_image2.jpg" },
+    { image: "url_to_image3.jpg" },
+    { image: "url_to_image4.jpg" },
+    { image: "url_to_image5.jpg" },
+  ];
+  
+  return (
+    <div className="flex flex-col overflow-x-hidden">
       <NavBar />
       <div className="mt-16">
         <Aboutgdsc />
