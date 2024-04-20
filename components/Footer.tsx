@@ -5,7 +5,11 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center bg-[#202124]">
             <hr className="bg-slate-400" />
             <div className="m-5">
-                <h1 className="text-lg font-medium text-center">Google Developer Student Clubs</h1>
+                <div className="flex justify-center items-center gap-2">
+                    <img src="/assets/images/gdsc-logo.png" className="w-8 h-8" alt="/"></img>
+                    <h1 className="text-lg font-medium text-center">Google Developer Student Clubs</h1>
+                </div>
+                
                 <div className="flex flex-row items-center gap-10 text-slate-300 mt-10">
                     <p>Terms & Conditions</p>
                     <p>Community Guidelines</p>
